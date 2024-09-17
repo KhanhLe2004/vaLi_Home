@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\LTWeb\\VaLi_Home\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\views\\shared\\_layoutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\views\\shared\\_layoutindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\views\\shared\\_layoutogani.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\views\\shared\\_layoutogani.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +47,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_LayoutIndex.cshtml",
+              "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_LayoutIndex.cshtml",
+              "RelativeDocumentMoniker": "VaLi_Home\\Views\\Shared\\_LayoutIndex.cshtml",
+              "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_LayoutIndex.cshtml",
+              "RelativeToolTip": "VaLi_Home\\Views\\Shared\\_LayoutIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T07:44:53.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "VaLi_Home\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "VaLi_Home\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T07:39:27.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VaLi_Home\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VaLi_Home\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T07:20:56.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LayoutOgani.cshtml",
+              "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
+              "RelativeDocumentMoniker": "VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
+              "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
+              "RelativeToolTip": "VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAAABoBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T07:13:57.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "VaLi_Home\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Controllers\\HomeController.cs",
               "RelativeToolTip": "VaLi_Home\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T06:48:40.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\Shared\\_Layout.cshtml",
@@ -51,11 +119,12 @@
               "RelativeToolTip": "VaLi_Home\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T06:48:31.583Z"
+              "WhenOpened": "2024-09-17T06:48:31.583Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\_ViewStart.cshtml",

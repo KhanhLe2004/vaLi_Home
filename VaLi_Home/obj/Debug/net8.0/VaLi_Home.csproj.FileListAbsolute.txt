@@ -28,3 +28,4 @@ D:\LTWeb\VaLi_Home\VaLi_Home\obj\Debug\net8.0\refint\VaLi_Home.dll
 D:\LTWeb\VaLi_Home\VaLi_Home\obj\Debug\net8.0\VaLi_Home.pdb
 D:\LTWeb\VaLi_Home\VaLi_Home\obj\Debug\net8.0\VaLi_Home.genruntimeconfig.cache
 D:\LTWeb\VaLi_Home\VaLi_Home\obj\Debug\net8.0\ref\VaLi_Home.dll
+D:\LTWeb\VaLi_Home\VaLi_Home\obj\Debug\net8.0\VaLi_Home.sourcelink.json
