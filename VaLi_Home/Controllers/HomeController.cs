@@ -12,7 +12,7 @@ namespace VaLi_Home.Controllers
         {
             _logger = logger;
         }
-
+        //aaaaaaaaaaaaaaaaaaa
         public IActionResult Index()
         {
             return View();
