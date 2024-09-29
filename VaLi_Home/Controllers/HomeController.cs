@@ -33,6 +33,13 @@ namespace VaLi_Home.Controllers
             ViewBag.maloai = maloai;
             return View(lst);
         }
+        public IActionResult ChiTietSanPham(string masp)
+        {
+            var sanPham = db.TDanhMucSps.SingleOrDefault(x => x.MaSp == masp); 
+            var anhSanPham=db.TAnhSps.Where(x=>x.MaSp==masp).ToList();
+            ViewBag.anhSanPham = anhSanPham;
+            return View(sanPham);
+        }
         public IActionResult Privacy()
         {
             return View();
