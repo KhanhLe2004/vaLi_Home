@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using VaLi_Home.Models;
+using VaLi_Home.ViewModels;
 using X.PagedList;
 
 namespace VaLi_Home.Controllers
@@ -33,13 +34,25 @@ namespace VaLi_Home.Controllers
             ViewBag.maloai = maloai;
             return View(lst);
         }
-        public IActionResult ChiTietSanPham(string masp)
+        public IActionResult ChiTietSanPham(string maSp)
         {
-            var sanPham = db.TDanhMucSps.SingleOrDefault(x => x.MaSp == masp); 
-            var anhSanPham=db.TAnhSps.Where(x=>x.MaSp==masp).ToList();
+            var sanPham = db.TDanhMucSps.SingleOrDefault(x => x.MaSp == maSp); 
+            var anhSanPham=db.TAnhSps.Where(x=>x.MaSp==maSp).ToList();
             ViewBag.anhSanPham = anhSanPham;
             return View(sanPham);
         }
+        public IActionResult ProductDetail(string maSp)
+        {
+            var sanPham = db.TDanhMucSps.SingleOrDefault(x => x.MaSp == maSp);
+            var anhSanPham = db.TAnhSps.Where(x => x.MaSp == maSp).ToList();
+            var homeProductDetailViewModel = new HomeProductDetailViewModel
+            {
+                danhMucSp = sanPham,
+                anhSps = anhSanPham,
+            };
+            return View(homeProductDetailViewModel);
+        }
+
         public IActionResult Privacy()
         {
             return View();
