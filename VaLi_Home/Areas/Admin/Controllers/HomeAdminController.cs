@@ -76,5 +76,23 @@ namespace VaLi_Home.Areas.Admin.Controllers
             }
             return View(sanPham);
         }
+        [Route("XoaSanPham")]
+        [HttpGet]
+        public IActionResult XoaSanPham(string maSanPham)
+        {
+            TempData["Messege"] = "";
+            var chiTietSanPham=db.TChiTietSanPhams.Where(x=>x.MaSp==maSanPham).ToList();
+            if(chiTietSanPham.Count() > 0)
+            {
+                TempData["Messege"] = "Khong xoa duoc san pham nay";
+                return RedirectToAction("DanhMucSanPham", "HomeAdmin");
+            }
+            var anhSanPham = db.TAnhSps.Where(x => x.MaSp == maSanPham); 
+            if(anhSanPham.Any()) db.Remove(anhSanPham);
+            db.Remove(db.TDanhMucSps.Find(maSanPham));
+            db.SaveChanges();
+            TempData["Messege"] = "San pham da duoc xoa";
+            return RedirectToAction("DanhMucSanPham", "HomeAdmin");
+        }
     }
 }
