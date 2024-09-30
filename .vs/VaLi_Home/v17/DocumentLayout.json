@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\areas\\admin\\views\\homeadmin\\danhmucsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\areas\\admin\\views\\homeadmin\\suasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\areas\\admin\\views\\homeadmin\\suasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\areas\\admin\\views\\homeadmin\\themsanphammoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\areas\\admin\\views\\homeadmin\\themsanphammoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|solutionrelative:vali_home\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{509CC72F-1D51-4596-91DC-1963F9A75B68}|VaLi_Home\\VaLi_Home.csproj|d:\\ltweb\\vali_home\\vali_home\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -49,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 30,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,7 +61,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "SuaSanPham.cshtml",
+              "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\SuaSanPham.cshtml",
+              "RelativeDocumentMoniker": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\SuaSanPham.cshtml",
+              "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\SuaSanPham.cshtml",
+              "RelativeToolTip": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\SuaSanPham.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T07:51:48.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ThemSanPhamMoi.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\ThemSanPhamMoi.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\ThemSanPhamMoi.cshtml",
@@ -65,12 +82,11 @@
               "RelativeToolTip": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\ThemSanPhamMoi.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T06:00:39.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T06:00:39.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\Home\\Index.cshtml",
@@ -78,8 +94,7 @@
               "RelativeToolTip": "VaLi_Home\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T05:04:05.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T05:04:05.572Z"
             },
             {
               "$type": "Document",
@@ -89,27 +104,27 @@
               "RelativeDocumentMoniker": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\DanhMucSanPham.cshtml",
               "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\DanhMucSanPham.cshtml",
               "RelativeToolTip": "VaLi_Home\\Areas\\Admin\\Views\\HomeAdmin\\DanhMucSanPham.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-30T04:39:24.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "HomeAdminController.cs",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
               "RelativeDocumentMoniker": "VaLi_Home\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
               "ToolTip": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
               "RelativeToolTip": "VaLi_Home\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwCUAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwDwAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T19:55:33.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
@@ -117,12 +132,11 @@
               "RelativeToolTip": "VaLi_Home\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T19:36:43.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T19:36:43.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "VaLi_Home\\Controllers\\HomeController.cs",
@@ -130,12 +144,11 @@
               "RelativeToolTip": "VaLi_Home\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T06:48:40.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T06:48:40.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SanPhamTheoLoai.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Home\\SanPhamTheoLoai.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\Home\\SanPhamTheoLoai.cshtml",
@@ -147,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_LayoutOgani.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\Shared\\_LayoutOgani.cshtml",
@@ -159,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "shop-details.html",
               "DocumentMoniker": "D:\\ogani-master\\shop-details.html",
               "RelativeDocumentMoniker": "..\\..\\ogani-master\\shop-details.html",
@@ -171,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\LTWeb\\VaLi_Home\\VaLi_Home\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "VaLi_Home\\Views\\_ViewStart.cshtml",

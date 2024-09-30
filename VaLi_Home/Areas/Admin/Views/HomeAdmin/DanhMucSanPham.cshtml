@@ -27,9 +27,6 @@
                 Thời gian bảo hành
             </th>
             <th>
-                Chiết khấu
-            </th>
-            <th>
                 Giá nhỏ nhất
             </th>
             <th>
@@ -69,7 +66,7 @@
                 @Html.DisplayFor(modelItem => item.GiaLonNhat)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.MaSp">Edit</a> |
+                <a asp-action="SuaSanPham" asp-route-maSanPham="@item.MaSp">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.MaSp">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.MaSp">Delete</a>
             </td>
