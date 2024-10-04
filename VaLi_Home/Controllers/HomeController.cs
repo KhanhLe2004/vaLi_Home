@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using VaLi_Home.Models;
+using VaLi_Home.Models.Authentication;
 using VaLi_Home.ViewModels;
 using X.PagedList;
 
@@ -16,7 +17,7 @@ namespace VaLi_Home.Controllers
         {
             _logger = logger;
         }
-        //aaaaaaaaaaaaaaaaaaa
+        [Authentication]
         public IActionResult Index(int? page)
         {
             int pageSize = 8;
@@ -25,6 +26,8 @@ namespace VaLi_Home.Controllers
             PagedList<TDanhMucSp> lst=new PagedList<TDanhMucSp>(lstSanPham, pageNumber, pageSize);
             return View(lst);
         }
+        [Authentication]
+
         public IActionResult SanPhamTheoLoai(String maloai,int? page)
         {
             int pageSize = 8;
