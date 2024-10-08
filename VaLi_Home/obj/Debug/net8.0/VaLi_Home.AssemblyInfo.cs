@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VaLi_Home")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eb193928bcab7cf9f61854b91d75adcaa1c9948")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fee4f0c1ab64ab079ce39c2a462035d9405dbda7")]
 [assembly: System.Reflection.AssemblyProductAttribute("VaLi_Home")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VaLi_Home")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

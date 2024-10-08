@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "ContainingType": "VaLi_Home.Controllers.ProductAPIController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/ProductAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VaLi_Home.Models.ProductModels.Product, VaLi_Home, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VaLi_Home.Controllers.ProductAPIController",
+    "Method": "GetProductByCatagory",
+    "RelativePath": "api/ProductAPI/{maloai}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maloai",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VaLi_Home.Models.ProductModels.Product, VaLi_Home, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
