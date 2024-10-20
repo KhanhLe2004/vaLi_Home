@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "VaLi_Home.Controllers.ProductAPIController",
+    "ContainingType": "TestTpl7.Controllers.ProductAPIController",
     "Method": "GetAllProduct",
     "RelativePath": "api/ProductAPI",
     "HttpMethod": "GET",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "VaLi_Home.Controllers.ProductAPIController",
+    "ContainingType": "TestTpl7.Controllers.ProductAPIController",
     "Method": "GetProductByCatagory",
     "RelativePath": "api/ProductAPI/{maloai}",
     "HttpMethod": "GET",

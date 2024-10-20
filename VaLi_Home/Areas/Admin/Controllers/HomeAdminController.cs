@@ -78,21 +78,77 @@ namespace VaLi_Home.Areas.Admin.Controllers
         }
         [Route("XoaSanPham")]
         [HttpGet]
-        public IActionResult XoaSanPham(string maSanPham)
+        public IActionResult XoaSanPham(string maSp)
         {
-            TempData["Messege"] = "";
-            var chiTietSanPham=db.TChiTietSanPhams.Where(x=>x.MaSp==maSanPham).ToList();
-            if(chiTietSanPham.Count() > 0)
-            {
-                TempData["Messege"] = "Khong xoa duoc san pham nay";
-                return RedirectToAction("DanhMucSanPham", "HomeAdmin");
-            }
-            var anhSanPham = db.TAnhSps.Where(x => x.MaSp == maSanPham); 
-            if(anhSanPham.Any()) db.Remove(anhSanPham);
-            db.Remove(db.TDanhMucSps.Find(maSanPham));
+            TempData["Message"] = "";
+
+            var CTSP = db.TChiTietSanPhams.Where(x => x.MaSp == maSp).Select(x => x.MaChiTietSp).ToList();
+
+            var CTHDB = db.TChiTietHdbs.Where(x => CTSP.Contains(x.MaChiTietSp)).ToList();
+            if (CTHDB.Any()) db.RemoveRange(CTHDB);
+            var AnhCT = db.TAnhChiTietSps.Where(x => CTSP.Contains(x.MaChiTietSp)).ToList();
+            if (AnhCT.Any()) db.RemoveRange(AnhCT);
+
+            var chitietsp = db.TChiTietSanPhams.Where(x => x.MaSp == maSp);
+            if (chitietsp.Any()) db.RemoveRange(chitietsp);
+
+            var anhSanPhams = db.TAnhSps.Where(x => x.MaSp == maSp);
+            if (anhSanPhams.Any()) db.RemoveRange(anhSanPhams);
+
+            db.Remove(db.TDanhMucSps.Find(maSp));
             db.SaveChanges();
-            TempData["Messege"] = "San pham da duoc xoa";
+            TempData["Message"] = "San pham da duoc xoa";
             return RedirectToAction("DanhMucSanPham", "HomeAdmin");
         }
+        //public IActionResult XoaSanPham(string maSp)
+        //{
+        //    TempData["Message"] = "";
+        //    try
+        //    {
+        //        var chiTietSanPhamIds = db.TChiTietSanPhams.Where(x => x.MaSp == maSp).Select(x => x.MaChiTietSp).ToList();
+
+        //        var chiTietHDBs = db.TChiTietHdbs.Where(x => chiTietSanPhamIds.Contains(x.MaChiTietSp)).ToList();
+        //        if (chiTietHDBs.Any())
+        //        {
+        //            db.TChiTietHdbs.RemoveRange(chiTietHDBs);
+        //        }
+        //        var anhChiTietSPs = db.TAnhChiTietSps.Where(x => chiTietSanPhamIds.Contains(x.MaChiTietSp)).ToList();
+        //        if (anhChiTietSPs.Any())
+        //        {
+        //            db.TAnhChiTietSps.RemoveRange(anhChiTietSPs);
+        //        }
+        //        var chiTietSanPhams = db.TChiTietSanPhams.Where(x => x.MaSp == maSp).ToList();
+        //        if (chiTietSanPhams.Any())
+        //        {
+        //            db.TChiTietSanPhams.RemoveRange(chiTietSanPhams);
+        //        }
+        //        var anhSanPhams = db.TAnhSps.Where(x => x.MaSp == maSp).ToList();
+        //        if (anhSanPhams.Any())
+        //        {
+        //            db.TAnhSps.RemoveRange(anhSanPhams);
+        //        }
+        //        var danhMucSP = db.TDanhMucSps.Find(maSp);
+        //        if (danhMucSP != null)
+        //        {
+        //            db.TDanhMucSps.Remove(danhMucSP);
+        //        }
+        //        db.SaveChanges();
+        //        TempData["Message"] = "Sản phẩm đã được xóa.";
+        //    }
+        //    catch (DbUpdateException ex)
+        //    {
+        //        var innerMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+        //        TempData["Message"] = "Có lỗi xảy ra khi lưu thay đổi: " + innerMessage;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        TempData["Message"] = "Có lỗi xảy ra: " + ex.Message;
+        //    }
+
+        //    return RedirectToAction("DanhMucSanPham", "HomeAdmin");
+        //}
+
+
+
     }
 }
