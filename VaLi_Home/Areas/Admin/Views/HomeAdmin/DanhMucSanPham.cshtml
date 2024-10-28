@@ -11,7 +11,172 @@
 <p>
     <a asp-action="ThemSanPhamMoi">Create New</a>
 </p>
-<p>@TempData["Messege"]</p>
+@* Thêm sản phẩm bằng API *@
+<a onclick="showHideDiveInsertData('displayForm'); return false;" class="btn btn-primary">Thêm sản phẩm bằng API</a>
+
+<div id="displayForm">
+    <form id="formAddProduct" method="post">
+        <div class="form-group">
+            <label class="control-label">Mã sản phẩm</label>
+            <input type="text" class="form-control" id="MaSp" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="TenSp" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Mã chất liệu</label>
+            <input type="text" class="form-control" id="MaChatLieu" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Ngăn laptop</label>
+            <input type="text" class="form-control" id="NganLapTop" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Model</label>
+            <input type="text" class="form-control" id="Model" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Cân nặng</label>
+            <input id="CanNang" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Độ nới</label>
+            <input id="DoNoi" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Mã hãng sản xuất</label>
+            <input id="MaHangSx" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Mã nước sản xuất</label>
+            <input id="MaNuocSx" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Mã đặc tính</label>
+            <input id="MaDacTinh" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Website</label>
+            <input id="Website" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Thời gian bảo hành</label>
+            <input id="ThoiGianBaoHanh" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Giới thiệu sản phẩm</label>
+            <input id="GioiThieuSp" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Chiết khấu</label>
+            <input id="ChietKhau" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Mã loại</label>
+            <input id="MaLoai" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Mã đối tượng</label>
+            <input id="MaDoiTuong" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Ảnh đại diện</label>
+            <input id="AnhDaiDien" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Giá nhỏ nhất</label>
+            <input id="GiaNhoNhat" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Giá lớn nhất</label>
+            <input id="GiaLonNhat" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <input onclick="addANewProduct('https://localhost:7175/api/product'); return false;" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    function addANewProduct(apiUrl) {
+        // Thu thập dữ liệu từ form
+        var duLieuSanPham = {
+            MaSp: $('#MaSp').val(),
+            TenSp: $('#TenSp').val(),
+            MaChatLieu: $('#MaChatLieu').val(),
+            NganLapTop: $('#NganLapTop').val(),
+            Model: $('#Model').val(),
+            CanNang: $('#CanNang').val(),
+            DoNoi: $('#DoNoi').val(),
+            MaHangSx: $('#MaHangSx').val(),
+            MaNuocSx: $('#MaNuocSx').val(),
+            MaDacTinh: $('#MaDacTinh').val(),
+            Website: $('#Website').val(),
+            ThoiGianBaoHanh: $('#ThoiGianBaoHanh').val(),
+            GioiThieuSp: $('#GioiThieuSp').val(),
+            //ChietKhau: $('#ChietKhau').val(),
+            MaLoai: $('#MaLoai').val(),
+            //MaDt: $('#MaDt').val(),
+            AnhDaiDien: $('#AnhDaiDien').val(),
+            GiaNhoNhat: $('#GiaNhoNhat').val(),
+            GiaLonNhat: $('#GiaLonNhat').val()
+        };
+
+        // Gửi yêu cầu AJAX
+        $.ajax({
+            type: 'POST',
+            url: apiUrl,
+            data: JSON.stringify(duLieuSanPham),
+            contentType: 'application/json',
+            dataType: 'json',
+            success: function (phanHoi) {
+                alert('Thêm sản phẩm thành công!');
+                window.location.href = 'https://localhost:7019/admin/homeadmin/danhmucsanpham'; // Chuyển hướng sau khi thêm thành công
+            },
+            error: function (loi) {
+                console.error('Lỗi khi thêm sản phẩm:', loi);
+                alert('Có lỗi xảy ra khi thêm sản phẩm. Vui lòng thử lại.');
+                alert($('#MaSp').val());
+                alert($('#TenSp').val());
+                alert($('#MaChatLieu').val());
+                alert($('#NganLapTop').val());
+                alert($('#Model').val());
+                alert($('#CanNang').val());
+                alert($('#DoNoi').val());
+                alert($('#MaHangSx').val());
+                alert($('#MaNuocSx').val());
+                alert($('#MaDacTinh').val());
+                alert($('#Website').val());
+                alert($('#ThoiGianBaoHanh').val());
+                alert($('#GioiThieuSp').val());
+                //alert($('#ChietKhau').val();
+                alert($('#MaLoai').val());
+                //alert($('#MaDt').val());
+                alert($('#AnhDaiDien').val());
+                alert($('#GiaNhoNhat').val());
+                alert($('#GiaLonNhat').val());
+            }
+        });
+    }
+    function showHideDiveInsertData(activeDiv) {
+        if ($(document.getElementById(activeDiv)).is(":visible")) {
+            $(document.getElementById(activeDiv)).hide('slow');
+        }
+        else {
+            $(document.getElementById(activeDiv)).show('slow');
+        }
+    }
+</script>
+
+
+
+@* <p>@TempData["Messege"]</p>
 <table class="table">
     <thead>
         <tr class="table-warning">
@@ -32,27 +197,6 @@
             </th>
             <th>
                 Giá lớn nhất
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
-            </th>
-            <th>
-                Tên sản phẩm
             </th>
         </tr>
     </thead>
@@ -99,6 +243,6 @@
 @Html.PagedListPager(Model, page => Url.Action("DanhMucSanPham", new { page = page }),
 new X.PagedList.Web.Common.PagedListRenderOptions()
 {
-    LiElementClasses=new List<String> {"page-item"},
+    LiElementClasses=new List<String> {"page-item"} 
     PageClasses=new List<String> {"page-link"}
-})
+})*@

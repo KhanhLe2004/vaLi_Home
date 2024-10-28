@@ -13,6 +13,7 @@ builder.Services.AddDbContext<QlbanVaLiContext>(x=>x.UseSqlServer(connectionStri
 builder.Services.AddScoped<ILoaiSpRepository, LoaiSpRepository>();
 builder.Services.AddSession();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

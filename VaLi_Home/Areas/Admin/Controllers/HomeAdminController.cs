@@ -38,19 +38,31 @@ namespace VaLi_Home.Areas.Admin.Controllers
             ViewBag.MaDt = new SelectList(db.TLoaiDts.ToList(), "MaDt", "TenLoai");  
             return View();
         }
-        [Route("ThemSanPhamMoi")]
+        [Route("ThemSanPhamMoi/Post")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult ThemSanPhamMoi(TDanhMucSp sanPham)
+        public IActionResult ThemSanPhamMoi([FromBody] TDanhMucSp sanPham)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 db.TDanhMucSps.Add(sanPham);
                 db.SaveChanges();
-                return RedirectToAction("DanhMucSanPham");
+                return Json(new { success = true });
             }
-            return View(sanPham);
+            return Json(new { success = false });
         }
+        //[Route("ThemSanPhamMoi")]
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult ThemSanPhamMoi(TDanhMucSp sanPham)
+        //{
+        //    if(ModelState.IsValid)
+        //    {
+        //        db.TDanhMucSps.Add(sanPham);
+        //        db.SaveChanges();
+        //        return RedirectToAction("DanhMucSanPham");
+        //    }
+        //    return View(sanPham);
+        //}
         [Route("SuaSanPham")]
         [HttpGet]
         public IActionResult SuaSanPham(string maSanPham)
